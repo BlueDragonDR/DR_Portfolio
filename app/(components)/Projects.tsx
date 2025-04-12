@@ -18,66 +18,88 @@ interface project {
 const projects: project[] = [
   {
     key: 1,
-    image_path: "/assets/project3.png",
-    type: "Website",
-    title: "Kai Ramen",
+    image_path: "/assets/project1.png",
+    type: "DeFi",
+    title: "streeth",
     description:
-      "A restaurant business website which focuses on Japanese cuisine.",
-    tools: ["ReactJS", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB"],
-    github_link: "https://github.com/thedudeontitan/kai-ramen",
-    link: "https://kai-ramen.vercel.app/",
+      "I was responsible for designing the UI/UX for the frontend of the main website and marketplace's node, leveraging my creativity and imagination. Additionally, I successfully implemented marketplace's node frontend UI and seamlessly integrated the frontend with backend API endpoints and smart contracts.",
+    tools: ["Solidity", "Next.JS", "TailwindCSS", "MongoDB", "ExpressJS"],
+    github_link: "https://github.com/BlueDragonDR/",
+    link: "https://www.streeth.app/",
   },
   {
     key: 2,
-    image_path: "/assets/project4.png",
-    type: "Website",
-    title: "AssetX",
+    image_path: "/assets/project2.png",
+    type: "DeFi",
+    title: "KIP",
     description:
-      "AssetX is a Data ownership and content monetorization platform secured with zkSnarks and built on Arweave AO.",
-    tools: [
-      "ReactJS",
-      "Lua Smart Contract",
-      "AO Based Computing",
-      "Tailwind CSS",
-      "SQLite",
-    ],
-    github_link: "https://github.com/AssetX-org/",
-    link: "https://assetx-ao.arweave.net/",
+      "Collaborated with cross-functional teams to develop and deploy smart contracts on the Ethereum & Solana networks using Solidity and Rust. Pioneered the implementation of advanced smart contract features, such as atomic swaps, flash loans, liquid staking and batch transactions, increasing the efficiency and scalability of decentralized finance (DeFi) protocols.",
+    tools: ["Solidity", "Rust", "ReactJS", "TailwindCSS"],
+    github_link: "https://github.com/BlueDragonDR/",
+    link: "https://www.kip.pro/",
   },
   {
     key: 3,
-    image_path: "/assets/project5.png",
-    type: "Web App",
-    title: "Blepo - L2 Data Aggregator",
+    image_path: "/assets/project3.jpg",
+    type: "Web3",
+    title: "Mineralex",
     description:
-      "Blepo is a L2 Monitor and Data Aggregator which sources data from various sources for the L2s in the BNB ecosystem to present them on a single platform.",
-    tools: ["TypeScript", "NextJS", "Material UI", "TailwindCSS"],
-    github_link: "https://github.com/thedudeontitan/blepo",
-    link: "https://blepo.vercel.app/",
+      "I have upgraded figma and frontend ui of mineralex using react.js + material-ui + styled-components based on figma design, also fixed issues of dex integration and wallet connection for presale and staking on Solana. Reviewed application requirements and interface designs to ensure compatibility with existing projects.",
+    tools: ["ReactJS", "TailwindCSS", "Rust", "ExpressJS", "RainbowKit"],
+    github_link: "https://github.com/BlueDragonDR/Minerelax_Tom",
+    link: "https://mineralexfrontend.vercel.app/",
   },
-
   {
     key: 4,
-    image_path: "/assets/project6.png",
+    image_path: "/assets/project4.png",
     type: "Defi",
-    title: "Luminar",
+    title: "MikeToken",
     description:
-      "Luminar is a High Frequency Autonoumous Trading Platform built on to horizontally scale on various blockchains.",
-    tools: ["Solidity", "TypeScript", "ReactJS", "TailwindCSS"],
-    github_link: "https://github.com/Luminar-Org",
-    link: "https://luminar-omega.vercel.app/",
+      "I developed this website for presale and staking as a web3 developer. I developed the frontend and integrated it with smart contracts for liquidity, swaps, pools and farms by collabrating with smart contract developers. Smart contracts had been deployed on the BNB network.",
+    tools: [
+      "ReactJS",
+      "Solidity",
+      "Wagmi",
+      "Tailwind CSS",
+    ],
+    github_link: "https://github.com/BlueDragonDR/MikeSwap_Solidity",
+    link: "https://miketoken.io/",
   },
   {
     key: 5,
-    image_path: "/assets/project7.png",
-    type: "Defi",
-    title: "NexusFi",
+    image_path: "/assets/project5.png",
+    type: "Mobile App",
+    title: "HOFA Gallery",
     description:
-      "NexusFi is a Decentralized Finance Platform where users can create indexes of their favorite tokens and trade them.",
-    tools: ["Rust", "TypeScript", "ReactJS", "TailwindCSS"],
-    github_link: "https://github.com/Nexusfi-org",
-    link: "https://nexusfi.vercel.app/",
+      "I developed React Native and NFT market place projects for mobile app to list their artists and have them delivered to the end customer. I deployed multi wallet connect functionality MetaMask, Phantom, CrossMint etc. Also, I developed TV app for google casting and implement the chat bot using gemini AI api.",
+    tools: ["React Native", "Solidity", "Firebase", "CrossMint"],
+    github_link: "https://github.com/BlueDragonDR/Hofa_ReactNative",
+    link: "https://drive.google.com/drive/folders/15y9eS-_JiC6_VzSDoDVb6hrUsjCSigf1",
   },
+
+  {
+    key: 6,
+    image_path: "/assets/project6.png",
+    type: "website",
+    title: "SEQUENCE",
+    description:
+      "I was a full-stack developer for this project. I had to convert this MEVN Stack website to MERN Stack website. I also was responsible for fixing some issues of styles and layouts. I got the new knowledge and experience to become a senior full-stack engineer.",
+    tools: ["MongoDB", "Express", "TypeScript", "ReactJS", "TailwindCSS"],
+    github_link: "https://github.com/BlueDragonDR/",
+    link: "https://sequenceqcs.com",
+  },
+  {
+    key: 7,
+    image_path: "/assets/project7.png",
+    type: "web App",
+    title: "FIVEJARS",
+    description:
+      "Have experienced in codeigniter, mvc model, Magento and etc. Built database using MySQL and solved the issues with searching algorithm and database",
+    tools: ["MySQL", "TypeScript", "ReactJS", "TailwindCSS"],
+    github_link: "https://github.com/BlueDragonDR/",
+    link: "https://fivejars.com/",
+  },
+
 ];
 
 export default function Projects() {
@@ -96,56 +118,54 @@ export default function Projects() {
               <div key={data.key}>
                 <Reveal side={`${data.key % 2 === 0 ? "right" : "left"}`}>
                   <div className="relative mt-14 flex flex-col justify-center items-center w-full mb-5">
-                    <Image
-                      src={data.image_path}
-                      alt="project"
-                      width={600}
-                      height={600}
-                      className={`w-[600px] ${
-                        data.key % 2 === 0 ? "ml-60" : ""
-                      }`}
-                    ></Image>
+                    <Link href={data.link} target="_blank">
+
+
+                      <Image
+                        src={data.image_path}
+                        alt="project"
+                        width={600}
+                        height={600}
+                        className={`w-[600px] ${data.key % 2 === 0 ? "ml-60" : ""
+                          }`}
+                      >
+                      </Image>
+                    </Link>
                     <div
-                      className={`absolute z-10 flex flex-col text-right ${
-                        data.key % 2 === 0 ? "mr-[45vw]" : "ml-[55vw]"
-                      }`}
+                      className={`absolute z-10 flex flex-col text-right ${data.key % 2 === 0 ? "mr-[45vw]" : "ml-[55vw]"
+                        }`}
                     >
                       <div className={`flex flex-col `}>
                         <span
-                          className={`font-mono text-[#66FCF1] text-sm ${
-                            data.key % 2 === 0 ? "text-left" : ""
-                          }`}
+                          className={`font-mono text-[#66FCF1] text-sm ${data.key % 2 === 0 ? "text-left" : ""
+                            }`}
                         >
                           {data.type}
                         </span>
                         <span
-                          className={`text-[#f3f3f3] font-semibold text-2xl mt-2 ${
-                            data.key % 2 === 0 ? "text-left" : ""
-                          }`}
+                          className={`text-[#f3f3f3] font-semibold text-2xl mt-2 ${data.key % 2 === 0 ? "text-left" : ""
+                            }`}
                         >
                           {data.title}
                         </span>
                       </div>
                       <div
-                        className={` mt-8 text-left rounded p-8 bg-[#15171f] w-[30vw] shadow-md shadow-[#15171f] hover:shadow-lg hover:shadow-[#15171f] transition-all ${
-                          data.key % 2 === 0 ? "" : "ml-10"
-                        }`}
+                        className={` mt-8 text-left rounded p-8 bg-[#15171f] w-[30vw] shadow-md shadow-[#15171f] hover:shadow-lg hover:shadow-[#15171f] transition-all ${data.key % 2 === 0 ? "" : "ml-10"
+                          }`}
                       >
                         <span className="text-[#f3f3f3] opacity-80">
                           {data.description}
                         </span>
                       </div>
                       <div
-                        className={`flex flex-col ${
-                          data.key % 2 === 0 ? "items-start" : ""
-                        }`}
+                        className={`flex flex-col ${data.key % 2 === 0 ? "items-start" : ""
+                          }`}
                       >
                         <div
-                          className={`mt-5 text-sm flex flex-wrap font-mono gap-x-2 w-[25vw] ${
-                            data.key % 2 === 0
-                              ? "mr-auto"
-                              : "ml-auto justify-end"
-                          }`}
+                          className={`mt-5 text-sm flex flex-wrap font-mono gap-x-2 w-[25vw] ${data.key % 2 === 0
+                            ? "mr-auto"
+                            : "ml-auto justify-end"
+                            }`}
                         >
                           {data.tools.map((tool) => (
                             <span key={tool} className="whitespace-nowrap">
@@ -212,7 +232,7 @@ export default function Projects() {
       </div>
       <div className="hover:bg-[#66FCF1] w-fit rounded transition-all mx-auto mt-10">
         <Reveal side="up">
-          <Link href="https:github.com/thedudeontitan" target="_blank">
+          <Link href="https:github.com/BlueDragonDR" target="_blank">
             <button className="bg-[#0B0C10] border z-10 border-[#66FCF1] text-[#66FCF1] w-fit p-5 rounded hover:-translate-x-1 hover:-translate-y-1 transition-all">
               Check Out My Other Work
             </button>

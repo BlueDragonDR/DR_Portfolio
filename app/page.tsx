@@ -49,7 +49,7 @@ export default function Page() {
             </Reveal>
             <Reveal side="up">
               <span className="text-5xl lg:text-7xl font-bold text-white tracking-wider">
-                Ankit Kokane.
+                David Rin.
               </span>
             </Reveal>
             <Reveal side="up">
@@ -57,7 +57,7 @@ export default function Page() {
                 I build things for Web and Mobile.
               </span>
             </Reveal>
-            {/* <div className=" lg:w-1/2 my-5">
+            <div className=" lg:w-1/2 my-5">
               <Reveal side="up">
                 <span className="text-lg lg:text-xl text-[#f3f3f3] text-opacity-70">
                   I&apos;m a Software Deveploper, I create immersive digital
@@ -66,17 +66,17 @@ export default function Page() {
                   <span className="text-[#66FCF1]">Freelancer</span>.
                 </span>
               </Reveal>
-            </div> */}
+            </div>
             <Reveal side="up">
               <div className="hover:bg-[#66FCF1] w-fit rounded transition-all">
-                <Link
+                {/* <Link
                   href="https://drive.google.com/file/d/1ODUkK-FCiYc67js2sSDwUjI0kAZU71PW/view?usp=sharing"
                   target="_blank"
                 >
                   <button className="bg-[#0B0C10] text-sm lg:text-base border z-10 border-[#66FCF1] text-[#66FCF1] w-fit p-5 rounded hover:-translate-x-1 hover:-translate-y-1 transition-all">
                     Resume
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </Reveal>
           </div>

@@ -30,32 +30,24 @@ export default function About() {
             <div className="flex flex-col gap-y-4 text-lg opacity-70">
               <Reveal side="left">
                 <span>
-                  Hello, I am Ankit Kokane and I enjoy creating software. I have
-                  been creating websites for over 4 years.
+                  Hello, I am David Rin and I enjoy creating software. I have
+                  been creating websites for over 10 years.
                 </span>
               </Reveal>
               <Reveal side="left">
                 <span>
-                  I am currently in last year of my Computer Engineering in
-                  Pune, India. I work as a Frontend Developer and also a
-                  Freelance Web, Mobile and Python Automantion Developer. I have
-                  also worked as a SDE Intern and Fullstack Web Developer.
+                  I have over 10 years of experience in building websites, web apps, and software development, and over 5 years of experience in
+                  blockchain technology.
                 </span>
               </Reveal>
               <Reveal side="left">
                 <span>
-                  I am a serial hacker and have won over 15 Internation
-                  hackathons, Recently I have won ETHGlobal Bangkok &apos;24,
-                  ETHGlobal London &apos;24, ETH India &apos;24 and Unfold
-                  &apos;24.
+                  Passionate about launching, developing, and maintaining web & blockchain requiring a broad yet experienced skillset.
+                  Intuitive problem-solving skills and proficiency in frontend & backend development, web3 integration, system and application
+                  security, auditing, and project management.
                 </span>
               </Reveal>
-              <Reveal side="left">
-                <span>
-                  Currently I am actively contributing to various open source
-                  projects.
-                </span>
-              </Reveal>
+              
               <Reveal side="left">
                 <span>
                   Here are a few technologies I&apos;ve been working with
@@ -67,7 +59,7 @@ export default function About() {
               <div className="grid grid-cols-2 gap-y-2 gap-x-6 text-base mt-5">
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
-                  Solidity | Move
+                  Solidity | Rust | FunC
                 </span>
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
@@ -79,41 +71,47 @@ export default function About() {
                 </span>
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
-                  Python
+                  Python | Django
                 </span>
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
-                  Django
+                  Node.js | Express.js
                 </span>
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
-                  Flutter
+                  Bootstrap | tailwind CSS | Material UI
                 </span>
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
-                  React Native
+                  Web3.js | Ethers.js
                 </span>
                 <span className="text-[#66FCF1] flex flex-row items-center gap-2">
                   <VscDebugBreakpointLogUnverified />
-                  Postgres | MongoDB | SQLite
+                  Wagmi | RainbowKit
+                </span>
+                <span className="text-[#66FCF1] flex flex-row items-center gap-2">
+                  <VscDebugBreakpointLogUnverified />
+                  React Native | Flutter
+                </span>
+                <span className="text-[#66FCF1] flex flex-row items-center gap-2">
+                  <VscDebugBreakpointLogUnverified />
+                  Firebase | MongoDB | MySQL 
                 </span>
               </div>
             </Reveal>
           </div>
           <Reveal side="right">
             <div
-              className={`ml-5 mt-5 border-2 border-[#66FCF1] rounded h-fit w-fit lg:my-auto transition-all ${
-                isHovered ? "translate-x-1 translate-y-1" : ""
-              }`}
+              className={`ml-5 mt-5 border-2 border-[#66FCF1] rounded h-fit w-fit lg:my-auto transition-all ${isHovered ? "translate-x-1 translate-y-1" : ""
+                }`}
             >
               <Image
                 src="/assets/pfp.png"
                 alt="image"
                 width={300}
                 height={300}
-                className={`-translate-x-4 -translate-y-4 rounded transition-all ${
-                  isHovered ? "hover:-translate-x-6 hover:-translate-y-6" : ""
-                }`}
+                className={`-translate-x-4 -translate-y-4 rounded transition-all ${isHovered ? "hover:-translate-x-6 hover:-translate-y-6" : ""
+                  }`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
