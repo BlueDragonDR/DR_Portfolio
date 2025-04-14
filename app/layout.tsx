@@ -10,7 +10,7 @@ import { PiTelegramLogoLight } from "react-icons/pi";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "David Rin",
+  title: "David Rin DEV",
   description: "David Rin's portfolio website",
 };
 
