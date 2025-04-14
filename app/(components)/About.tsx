@@ -86,7 +86,7 @@ export default function About() {
                   <span>Passionate about launching, developing, and maintaining web & blockchain requiring a broad yet experienced skillset. Intuitive problem-solving skills and proficiency in frontend & backend development, web3 integration, system and application security, auditing, and project management.</span>
                 </Reveal>
                 <Reveal side="left">
-                  <span>Here are a few technologies I've been working with recently:</span>
+                  <span>Here are a few technologies I&apos;ve been working with recently:</span>
                 </Reveal>
               </div>
 
