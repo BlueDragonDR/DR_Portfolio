@@ -99,6 +99,17 @@ const projects: project[] = [
     github_link: "https://github.com/BlueDragonDR/",
     link: "https://fivejars.com/",
   },
+  {
+    key: 8,
+    image_path: "/assets/project8.png",
+    type: "Meme site",
+    title: "SPONGE",
+    description:
+      "Designed the funny meme site in Tron chain and built frontend using React.js and Tailwind CSS.",
+    tools: ["TypeScript", "ReactJS", "TailwindCSS"],
+    github_link: "https://github.com/BlueDragonDR/",
+    link: "https://spongeofwallstreet.com/",
+  },
 
 ];
 

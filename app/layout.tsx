@@ -2,9 +2,10 @@ import Navbar from "./(components)/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter, } from "react-icons/fi";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { PiTelegramLogoLight } from "react-icons/pi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,9 @@ export default function RootLayout({
               <Link href="https://twitter.com/RbluedragonR">
                 <FiTwitter className="hover:scale-125 transition-all duration-500 hover:text-[#66FCF1]" />
               </Link>
+              <Link href="https://t.me/dave_r_dev715">
+                <PiTelegramLogoLight className="hover:scale-125 transition-all duration-500 hover:text-[#66FCF1]" />
+              </Link>             
               <div className="border-l-2 h-32 border-white" />
             </div>
           </div>

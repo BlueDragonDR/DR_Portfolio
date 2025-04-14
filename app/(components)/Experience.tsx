@@ -1,6 +1,7 @@
 import React from "react";
 import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 import { Reveal } from "../framer-motion/Reveal";
+import Link from "next/link";
 
 interface job {
   key: number;
@@ -8,6 +9,7 @@ interface job {
   company_name: string;
   duration: string;
   description: string[];
+  link?: string;
 }
 
 const jobs: job[] = [
@@ -21,9 +23,10 @@ const jobs: job[] = [
       "Demonstrated proficiency in utilizing blockchain technologies, front-end development frameworks to create a user-friendly and functional dashboard.",
       "Skills: react.js, typescript, material-ui,node.js/express.js, mongoDB, ether.js, hardhat, token & staking smart contracts, google cloud",
     ],
+    link: "https://www.arimax.ch/",
   },
   {
-    key: 1,
+    key: 2,
     title: "Frontend and Blockchain Engineer",
     company_name: "HOFA Gallery, Part-time",
     duration: "Mar 2022 to Jun 2022, Nov 2024 to Feb 2025",
@@ -32,9 +35,10 @@ const jobs: job[] = [
       "Produced high-quality figma design and mobile app using React Native. Also, implement the NFT market place smart contract on EVM",
       "Skills: React Native, creative and responsible design, figma, Firebase, Solidity",
     ],
+    link: "https://thehouseoffineart.com/",
   },
   {
-    key: 1,
+    key: 3,
     title: "Blockchain Developer",
     company_name: "Safu Network, Part-time",
     duration: "Nov 2021 to Dec 2022",
@@ -43,9 +47,10 @@ const jobs: job[] = [
       "Built dex platform of Safu Network called SAFUNET DEX by forking pancake swap.",
       "Skills: react.js, web3.js/ether.js, hardhat, smart contracts, forking pancake/biswap/uniswap",
     ],
+   link: "http://ww17.safunetwork.net/",
   },
   {
-    key: 1,
+    key: 4,
     title: "Smart Contract Developer",
     company_name: "Kip Protocol, Full time",
     duration: "Jan 2022 to Nov 2022",
@@ -55,10 +60,11 @@ const jobs: job[] = [
       "Designed and deployed 10 high-performance, secure smart contracts on the Ethereum and Solana blockchains, powering decentralized applications (dApps) with over $10 million in total value locked",
       "Integrated secure wallet functionality, supporting Meta Mask, Phantom, and Solana Wallet, into 8 decentralized applications (dApps), enabling seamless user onboarding",
     ],
+    link: "https://www.kip.pro/",
   },
- 
+
   {
-    key: 1,
+    key: 5,
     title: "Fullstack Web3 Developer",
     company_name: "FIXER, Full-time",
     duration: "Jan 2019 to Nov 2021",
@@ -69,9 +75,10 @@ const jobs: job[] = [
       "Assisted in developing the backend that became the foundation for the intersection between Web3 and FinTech.",
       "Closely collaborated with the product and dev teams to improve the efficiency of the platform by 25%.",
     ],
+    link: "https://fixer.io/",
   },
   {
-    key: 2,
+    key: 6,
     title: "Frontend & Full-Stack Developer",
     company_name: "METICULOSITY Company, Full-time",
     duration: "June 2016 to Dec 2018",
@@ -80,7 +87,8 @@ const jobs: job[] = [
       "Identified web-based user interactions and developed responsive userinterface components via php and Javascript frameworks concepts. Assisted in developing the front-end of web2 projects such as marketing,",
       "Skills: html, css/scss, bootstrap/tailwind, php, codeigniter(CI), laravel, modal-view-controller(mvc),angular/react.js, node.js, express.js, mysql, postgresql, magento, github, figma, aws, nginx, linux, jira",
     ],
-  }, 
+    link: "https://www.meticulosity.com/",
+  },
 ];
 
 export default function Experience() {
@@ -101,6 +109,7 @@ export default function Experience() {
                 duration={info.duration}
                 key={info.key}
                 title={info.title}
+                link ={info.link}
               />
             ))}
           </div>
@@ -116,28 +125,31 @@ const ProjectCard: React.FC<job> = ({
   company_name,
   description,
   duration,
+  link,
 }) => {
   return (
     <Reveal side="up">
-      <div className="hover:bg-[#66FCF1] rounded-md transition-all mt-10 flex">
-        <div className="bg-[#0B0C10] min-h-[50vh] justify-center shadow-md w-[80vw] lg:w-[25vw] flex flex-col gap-2 p-5 rounded-md shadow-[#232427] transition-all hover:-translate-x-2 hover:-translate-y-2">
-          <div className="flex flex-col font-mono font-medium">
-            <span className="text-lg">{title}</span>
-            <span className="text-lg text-[#66FCF1]">
-              &nbsp;@{company_name}
-            </span>
+      <Link href={`${link ? link : "#" }`} target="_blank">
+        <div className="hover:bg-[#66FCF1] rounded-md transition-all mt-10 flex">
+          <div className="bg-[#0B0C10] min-h-[50vh] justify-center shadow-md w-[80vw] lg:w-[25vw] flex flex-col gap-2 p-5 rounded-md shadow-[#232427] transition-all hover:-translate-x-2 hover:-translate-y-2">
+            <div className="flex flex-col font-mono font-medium">
+              <span className="text-lg">{title}</span>
+              <span className="text-lg text-[#66FCF1]">
+                &nbsp;@{company_name}
+              </span>
+            </div>
+            <span className="opacity-80 font-mono mb-5">{duration}</span>
+            <ul className="list-none flex flex-col gap-y-2 opacity-80 text-[#f3f3f3]">
+              {description.map((descrip) => (
+                <li key={descrip} className="pl-2">
+                  <VscDebugBreakpointLogUnverified className="inline-block mr-2 text-[#66FCF1]" />
+                  {descrip}
+                </li>
+              ))}
+            </ul>
           </div>
-          <span className="opacity-80 font-mono mb-5">{duration}</span>
-          <ul className="list-none flex flex-col gap-y-2 opacity-80 text-[#f3f3f3]">
-            {description.map((descrip) => (
-              <li key={descrip} className="pl-2">
-                <VscDebugBreakpointLogUnverified className="inline-block mr-2 text-[#66FCF1]" />
-                {descrip}
-              </li>
-            ))}
-          </ul>
         </div>
-      </div>
+    </Link>
     </Reveal>
   );
 };

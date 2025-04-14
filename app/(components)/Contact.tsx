@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { Reveal } from "../framer-motion/Reveal";
-
+import { MdOutlineEmail } from "react-icons/md";
+import { PiTelegramLogoLight } from "react-icons/pi";
+import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 export default function Contact() {
   return (
     <section className="min-h-screen flex mx-5 lg:mx-0 justify-center items-center">
@@ -14,17 +16,34 @@ export default function Contact() {
             <span className="text-5xl font-semibold opacity-90 text-[#f3f3f3] lg:mb-10 text-center">
               Reach Out to Me!
             </span>
-            <span className="lg:text-xl text-lg lg:w-[80vh] text-center font-medium opacity-75">
+            <span className="lg:text-xl text-lg lg:w-[80vh] text-center font-medium border-b-2 pb-6 opacity-75">
               I am always looking for new opportunities to work with
               professionals and companies. I would also like to contirbute to
               opensource projects providing real world value.
             </span>
-            <div className="hover:bg-[#66FCF1] w-fit rounded transition-all my-10">
-              <a href="mailto:dave.t.dev715@gmail.com">
-                <button className="bg-[#0B0C10] border z-10 border-[#66FCF1] text-[#66FCF1] w-fit p-5 rounded hover:-translate-x-1 hover:-translate-y-1 transition-all">
-                  Contact Me
-                </button>
+            <div className=" w-fit flex flex-col justify-center items-center gap-6 rounded transition-all my-10">
+              <a href="mailto:dave.t.dev715@gmail.com" className="flex flex-row gap-1 justify-center items-center text-lg text-white hover:text-[#66FCF1]">
+                <MdOutlineEmail className="text-2xl" />
+                <div className="z-10 ">
+                  dave.t.dev715@gmail.com
+                </div>
               </a>
+
+              <div className="w-full flex flex-row justify-around items-center">
+                <a href="https://t.me/dave_r_dev715" >
+                  <div className="w-fit bg-inherit hover:bg-[#66FCF1] text-2xl text-white border-2 hover:font-bold border-[#66FCF1] p-4 rounded-full">
+                    <PiTelegramLogoLight />
+                  </div>
+                </a>
+                <a href="https://twitter.com/RbluedragonR" >
+                  <div className="w-fit bg-inherit hover:bg-[#66FCF1] text-2xl text-white border-2 hover:font-bold border-[#66FCF1] p-4 rounded-full">
+                  <FiTwitter />
+                    
+                  </div>
+                </a>
+              </div>
+
+
             </div>
           </div>
         </div>
