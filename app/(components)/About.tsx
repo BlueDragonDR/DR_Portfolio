@@ -26,7 +26,7 @@ export default function About() {
     {
       title: "Frontend",
       items:
-        "HTML/HTML5, CSS/SCSS, Javascript/Typescript, Pixel Perfect/Responsive Design, Bootstrap/Tailwind/Material UI/Styled Components, React.js/Angular.js/Vue.js/Next.js/Vite.js ...",
+        "HTML, CSS, Javascript/Typescript, Unity/Responsive Design, Bootstrap/Tailwind/Material UI, React.js/Angular.js/Vue.js/Next.js/Vite.js ...",
     },
     {
       title: "Backend",
@@ -47,16 +47,8 @@ export default function About() {
       items: "React Native, Java, Flutter, Kotlin ...",
     },
     {
-      title: "PM Tools",
-      items: "Github, Gitlab, Trello, Monday, Bitbucket, Jira ...",
-    },
-    {
-      title: "Services",
-      items: "Netlify/Vercel, Docker, AWS, Amplify, Heroku ...",
-    },
-    {
       title: "Others",
-      items: "Figma, Adobe XD, Webflow, Linux, nginx, Hostinger ...",
+      items: "Figma, Adobe XD, Webflow, Linux, GoDaddy, Hostinger ...",
     },
   ];
 
